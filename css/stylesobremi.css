@@ -1,142 +1,67 @@
- /* rec-header */   
- .menuprincipal{
-    background-color: white;
-    position: absolute;
+body{
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(#fefefe, #FDEBD0);
+    /*background: linear-gradient(#fefefe, #888888);*/
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------*/
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text{
+    width: 50%;
+}
+
+.media-body {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.cont-der{
+    width: 40%;
+    margin-left: 5rem;
+}
+
+.imagen{
     width: 100%;
-    height: 118px;
-    left: 0px;
-    right: 100%;
-    top: 0px;
 }
 
-/* logotipo de header*/     
-.logontm{   
-   position: absolute;
-   height: 92.38px;
-   left: 155px;
-   top: 13px;
+/* ------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #E6B0AA;
 }
 
-/* descripcion de caracteristicas del texto menu*/    
-.navegacionmenu a{
-   text-transform: uppercase;
-   color: #C78C19;
-   font-size: 18px;
-   font-weight: bold;
-   text-decoration: none;
+/* ------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 576px){
+    .text{
+        width: 100%;
+    }
+    .imagen{
+        width: 100%;
+    }
+    .media-body {
+        font-size: 16px;
+    } 
 }
-
-/* posición del texto menu*/      
-nav li{
-   display: inline;
-   position: relative;
-   left: 600px;
-   top: 25px;
-   padding-left: 15px;
-}
-
- /* ----------------------------------------------------------------------------------------------- */
-
- /* tamaño de cuerpo*/
- main{
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
-    background: white;
-}
- 
- /* recuadro gris caracteristicas */
- .recgris{
-    position: absolute;
-    width: 540px;
-    height: 600px;
-    right: 725px;
-    top: 118px;
-    background-color: #D9D9D9;
-}
-
- /* posición recuadro texto */
- .textodescripcion{
-    position: absolute;
-    width: 540px;
-    height: 600px;
-    right: 0px;
-    top: 118px;
-    background-color: white;
-}
-
- /* posición/fuente de descripción texto */
-.hola2{
-    position: absolute;
-    width: 228px;
-    height: 50px;
-    left: 20px;
-    top: 50px;
-
-    font-family: 'Average Sans';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 25px; 
-    line-height: 42px;
-    color: black;
-}
-
- /* posición/fuente de descripción texto */
-.nombre2{
-    position: absolute;
-    height: 50px;
-    left: 20px;
-    top: 90px;
-
-    font-family: 'Swis721 Hv BT';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 54px;
-
-    color: #C78C19;
-    backdrop-filter: blur(3.72266px);
-}
-
- /* posición/fuente de descripción texto parrafo uno */
-.descripcion1{
-    position: absolute;
-    width: 400px;
-    height: 50px;
-    left: 20px;
-    top: 200px;
-
-    text-justify: distribute;
-    font-family: 'Average Sans';
-    font-style: normal;
-    font-size: 20px;
-    line-height: 25px;
-    color: black;
-}
-
- /* posición/fuente de descripción texto parrafo dos */
-.descripcion2{
-    position: absolute;
-    width: 400px;
-    height: 50px;
-    left: 20px;
-    top: 330px;
-
-    text-justify: distribute;
-    font-family: 'Average Sans';
-    font-style: normal;
-    font-size: 20px;
-    line-height: 25px;
-    color: black;
-}
-
-
-
-
-
-
-
- 
- 
- 
- 

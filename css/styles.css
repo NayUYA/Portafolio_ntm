@@ -1,139 +1,45 @@
- /* rec-header */   
- .menuprincipal{
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 118px;
-    left: 0px;
-    right: 100%;
-    top: 0px;
+body{
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(#fefefe, #FDEBD0);
+    /*background: linear-gradient(#fefefe, #888888);*/
 }
 
-/* logotipo de header*/       
-.logontm{   
-   position: absolute;
-   height: 92.38px;
-   left: 155px;
-   top: 13px;
+.nav-link{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.nav-link:hover{
+    text-decoration: underline;
 }
 
-/* descripcion de caracteristicas del texto menu*/     
-.navegacionmenu a{
-   text-transform: uppercase;
-   color: #C78C19;
-   font-size: 18px;
-   font-weight: bold;
-   text-decoration: none;
+/* ------------------------------------------------------------------------------*/
+
+.media{
+    display: flex;
+    align-content: center;
+    margin-top: 2rem;
 }
 
-/* posición del texto menu*/     
-nav li{
-   display: inline;
-   position: relative;
-   left: 600px;
-   top: 25px;
-   padding-left: 15px;
+.media-body {
+    margin-top: 4rem;
+    font-size: 25px;
 }
 
- /* ------------------------------------------------------------------*/
- 
- main{
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
-    background: white;
-  }
- 
- /* texto portada posición */
- .hola{
-     position: absolute;
-     width: 200px;
-     height: 43px;
-     left: 162.86px;
-     top: 220px;
-     list-style: none;
-     
-     /* texto portada caracteristicas */
-     font-family: 'Average Sans';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 33.3333px;
-     line-height: 43px;
-     color: #000000;}
-     
- 
- /* texto portada caracteristicas */
- .nombre{
-     position: absolute;
-     width: 503.81px;
-     height: 55.24px;
-     left: 162.86px;
-     top: 290px;
-     list-style: none;
-     
-     /* texto portada caracteristicas */
-     font-family: 'Swis721 Hv BT';
-     font-style: normal;
-     font-size: 45px;
-     line-height: 50px;
-     
-     color: #C78C19;
- }
- 
- /* texto portada caracteristicas */
- .full{
-    position: absolute;
-    width: 350px;
-    height: 37px;
-    left: 162.86px;
-    top: 350px;
-    list-style: none;
-     
-     /* texto portada caracteristicas */
-    font-family: 'Average Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28.5714px;
-    line-height: 37px; 
-    color: #000000;
- }
- 
- /* recuadro rosa de portada caracteristicas */
- .recrosa{
-     position: absolute;
-     width: 400px;
-     height: 490px;
-     right: 5px;
-     top: 110px;
-     margin: 17px 80.5px 38px 686px;
-     border-radius: 13px;
-     background-color: #f9d4d4;
- }
- 
- /* borde dorado de portada caracteristicas */
- .contornodorado{
-     position: absolute;
-     width: 650px;
-     height: 490px;
-     left: 150px;
-     top: 180px;
-     box-shadow: inset 0 3.8px 3.8px 0 rgba(0, 0, 0, 0.25);
-     border: solid 2.9px #c78c19;
- }
- 
- /* porcentaje de ancho de imagenes de redes sociales */
- img{            
-     max-width: 100%;}
+.box{
+    display: flex;
+    justify-content: center;
+    background: none;
+}
 
-.logoredes li{
-    width: 2.5%;
-    display:inline-block;
-    position: relative;
-    left: 100px;
-    top: 570px;
-    padding-left: 15px;  
-    vertical-align: top;
-    margin: 0 1px; 
- }
+/* ------------------------------------------------------------------------------*/
 
- 
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #E6B0AA;
+}

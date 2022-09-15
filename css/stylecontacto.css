@@ -1,99 +1,84 @@
- /* rec-header */    
- .menuprincipal{
-     background-color: white;
-     position: absolute;
-     width: 100%;
-     height: 118px;
-     left: 0px;
-     right: 100%;
-     top: 0px;
- }
-
- /* logotipo de header*/      
- .logontm{   
-    position: absolute;
-    height: 92.38px;
-    left: 155px;
-    top: 13px;
+body{
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(#fefefe, #FDEBD0);
 }
 
- /* descripcion de caracteristicas del texto menu*/      
-.navegacionmenu a{
+.nav-link{
     text-transform: uppercase;
     color: #C78C19;
     font-size: 18px;
     font-weight: bold;
-    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.nav-link:hover{
+    text-decoration: underline;
 }
 
- /* posición del texto menu*/      
-nav li{
-    display: inline;
-    position: relative;
-    left: 600px;
-    top: 25px;
-    padding-left: 15px;
+/* ------------------------------------------------------------------------------*/
+ 
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-/*------------------------------------------------------------------------------------------------*/
- /* tamaño de cuerpo*/
-main{
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
+.form{
+    width: 45%;
+    margin-left: 1rem;
+}
+
+
+.btn-enviar{
+    margin-bottom: 4rem;
+    background-color: #943126;
+    border: none;
+    width: 10rem;
+} 
+
+.cont-der{
+    width: 45%;
+    height: 350px;
     background: white;
+    color: #00000080;
+    margin-left: 3rem;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 2rem;
 }
 
-/* Posición de formulario*/
-form{
-    position: absolute;
-    width: 70%;
-    top: 140px;
-    left: 155px;
+.datos-contacto{
+    list-style: none;
 }
 
-/* etiqueta de texto del formulario */
-form label{
-    display: block;
-    font-size: 15px;    
+
+/* ------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #E6B0AA;
 }
 
-/* etiqueta de espacio del formulario */
-form input{
-    display: block;
-    margin: 0 0 0px;
-    padding: 10px 25px;
-    width: 40%;
-}
+@media screen and (max-width: 576px){
+    .form{
+        width: 100%;
+        margin-left: 1rem;
+    }
 
-/* describe la posición y fuente de texto*/
-.contacto{
-    position: absolute;
-    width: 450px;
-    height: 400px;
-    top: 140px;
-    right: 100px;
-    border-radius: 13px;
-    background-color: #f9d4d4;
-    padding: 5px;
-}
-
-.redcontacto{
-    text-justify: distribute;
-    font-family: 'Average Sans';
-    font-size: 18px;
-    line-height: 45px;
-    color: black;
-
-    position: relative;
-    top: 10px;
-    left: 2px;
-}
-
-.redcontacto a{
-    text-justify: distribute;
-    font-family: 'Average Sans';
-    font-size: 15px;
-    line-height: 40px;
-    color: rgb(103, 103, 103);
+    .cont-der{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+        margin-left: .5rem;
+        font-size: 13px;
+        padding: 5px 5px 5px 5px;
+    }
+    h1{
+        font-size: 15px;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
 }
