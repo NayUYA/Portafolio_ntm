@@ -1,0 +1,46 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(#fefefe, #FADBD8);
+    /*background: linear-gradient(#fefefe, #888888);*/
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+/* ----------------------------------------------------------------------------------------*/
+
+
+#btnQuote{
+    margin-bottom: 4rem;
+    background-color: #943126;
+    border: none;
+    width: 10rem;
+} 
+
+.btn-primary{
+    background-color: #943126;
+    border: none;
+}
+
+.card{
+    margin-bottom: 40px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #E6B0AA;
+}
