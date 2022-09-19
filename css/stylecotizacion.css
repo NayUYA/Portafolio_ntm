@@ -17,18 +17,25 @@ body{
 /* ----------------------------------------------------------------------------------------*/
 
 
-#btnQuote{
+#btnCotizar{
     margin-bottom: 4rem;
     background-color: #943126;
     border: none;
     width: 10rem;
 } 
+#btnCotizar:hover{
+    background-color: #BBBBBB;
+} 
 
-.btn-primary{
+#btnPrint{
     background-color: #943126;
     border: none;
 }
+#btnPrint:hover{
+    background-color: #BBBBBB;
+} 
 
+/* car - cotización */
 .card{
     margin-bottom: 40px;
 }
