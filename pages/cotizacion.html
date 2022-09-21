@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/stylecotizacion.css">
-    <title>Hello, world!</title>
+    <title>Cotización</title>
   </head>
   <body>
     <header class="container">
@@ -25,70 +25,68 @@
           </nav>
     </header>
     <main class="container">
-
             <h1>Cotiza mis servicios</h1>
             <form>
-                <div class="form-row">     <!-- row -->
-                    <div class="form-group col-md-6">
-                        <label for="inputName">Nombre</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Nombre completo">
-                    </div>                  
-                    <div class="form-group col-md-6">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="dominio@ejemplo.com">
-                  </div>
-                </div> <!--  cierre row -->
+                <div> <!-- row 0 -->
+                    <div class="form-row">    <!-- row 1 -->
+                        <div class="form-group col-md-6">
+                            <label for="validacionNombre">Nombre</label>
+                            <input type="text" class="form-control" id="validacionNombre" placeholder="Nombre completo" required>
+                            <div id="validacionCorreoFeedback" class="invalid-feedback">Por favor ingrese su nombre completo</div>
+                        </div>                  
+                        <div class="form-group col-md-6">
+                            <label for="validacionCorreo">Email</label>
+                            <input type="email" class="form-control" id="validacionCorreo" placeholder="dominio@ejemplo.com" required>
+                            <div id="validacionCorreoFeedback" class="invalid-feedback">Por favor ingrese su correo</div>
+                        </div>
+                    </div> <!--  cierre row 1 -->
 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputExtras">Servicios</label>
-                        <select id="inputExtras" class="form-control" >
-                            
-                    <!-- <option selected>Choose.</option> -->
-                        <option>Seleccionar</option>
-                        <option value="25000">Desarrollo Web</option>
-                        <option value="1500"> Contenido redes</option>
-                        <option value="3000">Hosting</option>
-                        <option value="12000">Mantenimiento y optimización</option>
-                        </select>
-                    </div>
+                    <div class="form-row"><!-- row 2 -->
+                        <div class="form-group col-md-6">
+                            <label for="inputServicios">Servicios</label>
+                            <select id="inputServicios" class="form-control" required>
+                                <option selected disabled value="">Seleccionar</option>
+                                    <option value="7000">Desarrollo Web</option>
+                                    <option value="1100">Mantenimiento y optimización</option>
+                                    <option value="1500">Hosting</option>
+                            </select>
+                            <div id="inputServiciosFeedback" class="invalid-feedback">Por favor seleccione una opción</div>
+                        </div>
 
-                    <div class="form-group col-md-6">
-                        <label for="inputHours">Horas</label>
-                        <input type="text" class="form-control" id="inputHours" placeholder="# Horas">
-                     </div>
-                </div><!-- row -->
-
-                <div>
-                    <p>Si requiere factura el cobro será más I.V.A.</p>  
-                </div>
-
-                
-                <div class="form-group">
+                        <div class="form-group col-md-6">
+                            <label for="inputTiposervicio">Tipo de servicio</label>
+                            <select id="inputTiposervicio" class="form-control" >    
+                                <option selected disabled value="">Seleccionar</option>
+                                    <option value="1.50">Urgente</option>
+                                    <option value="1.20">No urgente</option>
+                            </select>
+                            <div id="inputTiposervicioFeedback" class="invalid-feedback">Por favor seleccione una opción</div>
+                    </div> <!-- cierre row 2 -->
+                </div> <!-- cierre row 0 -->
+                       
+                <div class="form-group"> <!-- casilla de requisito de IVA -->
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="checkIVA">
-                        <label class="form-check-label" for="checkIVA">I.V.A.</label>
+                        <input class="form-check-input" type="checkbox" id="checkIVA" checked>
+                        <label class="form-check-label" for="checkIVA">Si requiere factura el cobro será más I.V.A.</label>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary" id="btnQuote"><strong>Cotizar</strong></button>
+                <button type="button" class="btn btn-primary" id="btnCotizar"><strong>Cotizar</strong></button>
             </form>
         </main>
 
         <main class="container">
             <div class="card"> <!-- card -->
-                <div class="card-header">
-                  Quotation
-                </div>
+                <div class="card-header">Cotización</div>
                 <div class="card-body">
-                    <h5 class="card-title" id="cardTitle"></h5>
-                    <p class="card-text" id="cardText"></p>  
-                    <p class="card-text" style= "text-align:right"  id="cardCost">$</p>  
+                    <h5 class="card-title" id="cardTitulo"></h5>
+                    <p class="card-text" id="cardTexto"></p>  
+                    <p class="card-text" style= "text-align:right"  id="cardCosto">$</p>  
                 <a href="#" class="btn btn-primary d-print-none"  id="btnPrint">Imprimir</a>
                 </div>
             </div> <!-- card -->
         </main>
-
     <footer>
+
         <nav class="footer">
             <a class="navbar-brand" href="https://drive.google.com/file/d/1KPM77INxiKfSjnZbXsYbAXNOHIph2i3E/view?usp=sharing"><img src="/img/logo_cv.png" width="30" height="30" alt=""></a>
             <a class="navbar-brand" href="#"><img src="/img/logo_github.png" width="30" height="30" alt=""></a>
@@ -98,6 +96,8 @@
 
         </footer>
 
+    <script src="/js/cotización.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>

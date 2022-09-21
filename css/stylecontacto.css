@@ -29,11 +29,15 @@ body{
 }
 
 
-.btn-enviar{
+#btnEnviar{
     margin-bottom: 4rem;
     background-color: #943126;
     border: none;
     width: 10rem;
+} 
+
+#btnEnviar:hover{
+    background-color: #BBBBBB;
 } 
 
 .cont-der{
